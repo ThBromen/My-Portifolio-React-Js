@@ -9,8 +9,8 @@ const Skills = () => {
    
    <section id='skills'> 
 <span className='skillTitle'> What I do</span>
-<span className='skillDesc'> Full-stack engineer with a strong foundation in computer and software engineering.<br/>
- Proficient in Node.js, React.js, Java, and more, with a passion for developing robust software solutions. Skilled<br/>
+<span className='skillDesc'> Full-stack engineer with a strong foundation in computer and software engineering.
+ Proficient in Node.js, React.js, Java, and more, with a passion for developing robust software solutions. Skilled
   in strategy analysis and eager to explore collaborative opportunities.</span>
   <div className='skillBalls'>
   <div className='skillBar'>
