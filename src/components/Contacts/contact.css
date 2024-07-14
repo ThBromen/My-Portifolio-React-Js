@@ -1,159 +1,158 @@
 #contactPage {
-    min-height: calc(100vh - 4rem);
-    width: 100%;
-    max-width: 60rem;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-  }
-  
-  .contactPageTitle {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .clientsDesc {
-    font-weight: 300;
-    font-size: 1rem;
-  }
-  
-  .clientImgs {
-    margin: 1rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .clientImg {
-    object-fit: cover;
-    width: 100%;
-    max-width: 15rem;
-    height: auto;
-    padding: 0.25rem;
-  }
-  
-  #clients {
-    padding-bottom: 2rem;
-  }
-  
+  min-height: calc(100vh - 4rem);
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.contactPageTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.clientsDesc {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.clientImgs {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.clientImg {
+  object-fit: cover;
+  width: 60%;
+  max-width: 15rem;
+  height: 11rem;
+  padding: 0.25rem;
+}
+
+#clients {
+  padding-bottom: 2rem;
+}
+
+.clientComp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 0.5rem;
+  width: calc(24% - 0.5rem); /* Ensure two images per row */
+}
+
+.clientDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+
+.clientName {
+  font-size: 1rem;
+  color: rgb(56, 56, 219);
+  font-weight: 900;
+  text-align: center;
+}
+
+.clientPosition {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.clientBtn {
+  margin: 1rem;
+  background: white;
+  border-radius: 1.5rem;
+  width: 6rem;
+  height: 2.5rem;
+  border: none;
+}
+
+.contactDesc {
+  padding: 1rem;
+  font-size: medium;
+  font-weight: 300;
+}
+
+.contactForm {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.name, .email, .msg {
+  font-size: medium;
+  width: 100%;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgb(40, 40, 40);
+}
+
+.submitBtn {
+  background: white;
+  border: none;
+  padding: 0.75rem 3.5rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.link {
+  object-fit: cover;
+  height: 2rem;
+  width: 2rem;
+  margin: 0.5rem;
+}
+
+@media (max-width: 768px) {
   .clientComp {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin: 0.5rem;
-    width: calc(50% - 1rem);
+    width: calc(50% - 1rem); /* Ensure two images per row on smaller screens */
   }
-  
-  .clientDetails {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0.25rem;
-    padding: 0.25rem;
+
+  .contactPageTitle {
+    font-size: 1.5rem;
   }
-  
-  .clientName {
-    font-size: 1rem;
-    color: rgb(56, 56, 219);
-    font-weight: 900;
-    text-align: center;
+
+  .clientsDesc, .contactDesc {
+    font-size: 0.9rem;
   }
-  
-  .clientPosition {
-    font-size: 0.8rem;
-    font-weight: 500;
-  }
-  
-  .clientBtn {
-    margin: 1rem;
-    background: white;
-    border-radius: 1.5rem;
-    width: 6rem;
-    height: 2.5rem;
-    border: none;
-  }
-  
-  .contactDesc {
-    padding: 1rem;
-    font-size: medium;
-    font-weight: 300;
-  }
-  
-  .contactForm {
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 40rem;
-  }
-  
+
   .name, .email, .msg {
     font-size: medium;
-    width: 100%;
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    background: rgb(40, 40, 40);
+    padding: 0.5rem;
   }
-  
+
   .submitBtn {
-    background: white;
-    border: none;
-    padding: 0.75rem 3.5rem;
-    margin: 2rem;
-    border-radius: 0.5rem;
+    padding: 0.75rem 2rem;
   }
-  
-  .links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
+
   .link {
-    object-fit: cover;
-    height: 3rem;
-    width: 3rem;
-    margin: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 0.25rem;
   }
-  
-  @media (max-width: 768px) {
-    .clientComp {
-      width: calc(100% - 1rem);
-    }
-  
-    .contactPageTitle {
-      font-size: 1.5rem;
-    }
-  
-    .clientsDesc, .contactDesc {
-      font-size: 0.9rem;
-    }
-  
-    .name, .email, .msg {
-      font-size: medium;
-      padding: 0.5rem;
-    }
-  
-    .submitBtn {
-      padding: 0.75rem 2rem;
-    }
-  
-    .link {
-      height: 2.5rem;
-      width: 2.5rem;
-      margin: 0.25rem;
-    }
-  }
-  
+}

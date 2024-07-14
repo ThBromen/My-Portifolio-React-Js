@@ -7,7 +7,6 @@ import client4 from '../../Assets/client4.jpg';
 import watsup from '../../Assets/whatsapp icon.png';
 import instagram from '../../Assets/instagram icon.png';
 import linkedIn from '../../Assets/linkedin icon.png';
-import youtube from '../../Assets/youtube icon.png';
 import Twiter from '../../Assets/twitter icon.png';
 import facebook from '../../Assets/facebook icon.png';
 import tickTock from '../../Assets/tik-tok icon.png';
@@ -32,6 +31,7 @@ const Contact = () => {
               <span className='clientPosition'>CEO of Alex Johnson Enterprises</span>
               <button className='clientBtn'>Contact</button>
             </div>
+            
           </div>
           <div className='clientComp'>
             <img src={client2} alt='client 2' className='clientImg' />
@@ -73,7 +73,6 @@ const Contact = () => {
             <img src={tickTock} alt='TikTok' className='link' />
             <img src={watsup} alt='WhatsApp' className='link' />
             <img src={linkedIn} alt='LinkedIn' className='link' />
-            <img src={youtube} alt='YouTube' className='link' />
             <img src={Twiter} alt='Twitter' className='link' />
             <img src={facebook} alt='Facebook' className='link' />
             <img src={microsoft} alt='Microsoft' className='link' />
