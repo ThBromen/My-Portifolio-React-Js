@@ -35,6 +35,7 @@ const Works = () => {
           <img src={Design} alt='Blog Design' className='worksImg' />
           <Link to=''><button className='btn'> View </button></Link>
         </div>
+        
         <div className='workComp'>
           <h2>Database Design</h2>
           <img src={Database} alt='Database Design' className='worksImg' />

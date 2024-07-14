@@ -22,11 +22,13 @@ const Contact = () => {
 
     emailjs
       .sendForm('service_i7ia4bp', 'template_5s01lye', form.current, {
-        publicKey: 'HpOv4_ja4XZf7m7DiQqTZ',
+        publicKey: 'Cxilq_a1kEJx0a4ov',
       })
       .then(
-        () => {
-          console.log('SUCCESS!');
+        (result) => {
+          console.log(result.text);
+          e.target.reset();
+          alert ('Email sent !');
         }, 
         (error) => {
           console.log('FAILED...', error.text);
