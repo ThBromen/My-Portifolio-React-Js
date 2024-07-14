@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import "./contact.css";
 import client1 from '../../Assets/client1.jpg';
 import client2 from '../../Assets/client2.jpg';
@@ -12,8 +12,28 @@ import facebook from '../../Assets/facebook icon.png';
 import tickTock from '../../Assets/tik-tok icon.png';
 import microsoft from '../../Assets/microsoft icon.png';
 import email from '../../Assets/gmail icon.png';
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_i7ia4bp', 'template_5s01lye', form.current, {
+        publicKey: 'HpOv4_ja4XZf7m7DiQqTZ',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        }, 
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     <section id='contactPage'>
       <div id='clients'>
@@ -63,11 +83,13 @@ const Contact = () => {
       <div id='contact'>
         <h1 className='contactPageTitle'>Contact Me</h1>
         <span className='contactDesc'>Please fill out the form below to discuss any work opportunity</span>
-        <form className='contactForm'>
-          <input type='text' className='name' placeholder='Your name' />
-          <input type='email' className='email' placeholder='Your Email' />
-          <textarea rows={5} placeholder='Your Message' className='msg'></textarea>
+
+        <form className='contactForm' ref={form} onSubmit={sendEmail}>
+          <input type='text' className='name' placeholder='Your name' name='your_name' />
+          <input type='email' className='email' placeholder='Your Email' name='your_email' />
+          <textarea rows={5} placeholder='Your Message' className='msg' name='message'></textarea>
           <button type='submit' className='submitBtn'>Submit</button>
+
           <div className='links'>
             <img src={instagram} alt='Instagram' className='link' />
             <img src={tickTock} alt='TikTok' className='link' />
