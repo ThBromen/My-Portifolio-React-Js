@@ -1,16 +1,17 @@
 import React, { useRef } from 'react';
 import "./contact.css";
+// import { Link } from 'react-scroll';
 import client1 from '../../Assets/client1.jpg';
 import client2 from '../../Assets/client2.jpg';
 import client3 from '../../Assets/client3.jpg';
 import client4 from '../../Assets/client4.jpg';
-import watsup from '../../Assets/whatsapp icon.png';
+import whatsapp from '../../Assets/whatsapp icon.png';
 import instagram from '../../Assets/instagram icon.png';
 import linkedIn from '../../Assets/linkedin icon.png';
-import Twiter from '../../Assets/twitter icon.png';
+import twitter from '../../Assets/twitter icon.png';
 import facebook from '../../Assets/facebook icon.png';
 import tickTock from '../../Assets/tik-tok icon.png';
-import microsoft from '../../Assets/microsoft icon.png';
+import github from '../../Assets/github.png';
 import email from '../../Assets/gmail icon.png';
 import emailjs from '@emailjs/browser';
 
@@ -93,15 +94,31 @@ const Contact = () => {
           <button type='submit' className='submitBtn'>Submit</button>
 
           <div className='links'>
-            <img src={instagram} alt='Instagram' className='link' />
-            <img src={tickTock} alt='TikTok' className='link' />
-            <img src={watsup} alt='WhatsApp' className='link' />
-            <img src={linkedIn} alt='LinkedIn' className='link' />
-            <img src={Twiter} alt='Twitter' className='link' />
-            <img src={facebook} alt='Facebook' className='link' />
-            <img src={microsoft} alt='Microsoft' className='link' />
-            <img src={email} alt='Email' className='link' />
-          </div>
+      <a href='https://www.instagram.com/theogene_250' target='_blank' rel='noopener noreferrer'>
+        <img src={instagram} alt='Instagram' className='link' />
+      </a>
+      <a href='https://www.tiktok.com/@bromen92?_t=8o40FH6dR3N&_r=1' target='_blank' rel='noopener noreferrer'>
+        <img src={tickTock} alt='TikTok' className='link' />
+      </a>
+      <a href='https://wa.me/250784020043' target='_blank' rel='noopener noreferrer'>
+        <img src={whatsapp} alt='WhatsApp' className='link' />
+      </a>
+      <a href='https://www.linkedin.com/in/hashimwimana-theogene' target='_blank' rel='noopener noreferrer'>
+        <img src={linkedIn} alt='LinkedIn' className='link' />
+      </a>
+      <a href='https://x.com/Theogene_Bromen' target='_blank' rel='noopener noreferrer'>
+        <img src={twitter} alt='Twitter' className='link' />
+      </a>
+      <a href='https://www.facebook.com/theogene.hashimwimana' target='_blank' rel='noopener noreferrer'>
+        <img src={facebook} alt='Facebook' className='link' />
+      </a>
+      <a href='https://github.com/ThBromen' target='_blank' rel='noopener noreferrer'>
+        <img src={github} alt='GitHub' className='link' />
+      </a>
+      <a href='mailto:hashimwimanatheogene34@gmail.com'>
+        <img src={email} alt='Email' className='link' />
+      </a>
+    </div>
         </form>
       </div>
     </section>

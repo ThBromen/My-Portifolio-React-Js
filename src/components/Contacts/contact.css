@@ -132,6 +132,15 @@
   .clientComp {
     width: calc(50% - 1rem); /* Ensure two images per row on smaller screens */
   }
+  .contactForm {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 30rem;
+  }
 
   .contactPageTitle {
     font-size: 1.5rem;

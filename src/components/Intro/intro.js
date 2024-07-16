@@ -3,6 +3,7 @@ import "./intro.css"
 import { Link}  from'react-scroll';
 import bg from "../../Assets/PXL_new.png"
 import btnImg from"../../Assets/hire.png"
+import cv from '../../Assets/Cv.pdf';
 const Intro = () => {
   return (
     <section id="intro">
@@ -15,7 +16,9 @@ const Intro = () => {
   <Link><button className='btn'><img src={btnImg} alt='Hire me' className='btnImg'/> Hire me</button></Link>
 </div>
 
-<img src={bg} Alt="Profile" className='bg'/>
+<a href={cv} target='_blank' rel='noopener noreferrer'>
+        <img src={bg} alt='Profile' className='bg' />
+      </a>
     </section>
   );
 }
